@@ -1,0 +1,100 @@
+
+.ti{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    svg{
+      margin-right: 0.5em;
+    }
+   }
+
+
+
+
+.c-summary{
+   
+  
+  .s-container{
+    padding: 1.5em;
+    border-radius: 5%;
+
+    h4{
+        margin-bottom: 1em;
+        font-size: 1.2rem;
+        font-weight: 700;
+    }
+
+
+  .score-box{
+   display: flex; 
+   justify-content: space-between;
+   align-items: center;
+   flex-wrap: wrap;
+   padding: 0.1em 1em;
+   margin-bottom: 0.5em;
+   border: none;
+   border-radius: 0.8em;
+ 
+}
+
+.reaction{
+    background-color:  $reaction-bg-color;;
+    @extend .ti;
+    color: $reaction-text-color;
+   
+ }
+
+ 
+.memory{
+    background-color:  $memory-bg-color;
+    @extend .ti;
+    color: $memory-text-color;
+ }
+
+ 
+.verbal{
+    background-color:  $verbal-bg-color;
+    @extend .ti;
+    color: $verbal-text-color;
+ }
+
+ 
+.visual{
+    background-color:  $visual-bg-color;
+    @extend .ti;
+    color: $visual-text-color;
+ }
+
+ 
+
+   .score{
+    color: black;
+    font-weight: 700;
+
+    span{
+        color: grey;
+    }
+
+   }
+
+}
+
+
+  button{
+    width: 100%;
+    margin: 1em auto;
+    padding: 1.0em 0em; 
+    border-radius: 5em;
+    background-color: $dark-gray-blue;
+    color: $font-color-result;
+    border: none;
+    font-size: 1.2rem;
+
+    &:hover{
+        background: linear-gradient(to top, $gradient-color1, $gradient-color2);
+    }
+  }
+
+  
+}

@@ -1,0 +1,104 @@
+@import './variables.scss';
+
+
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+.container{
+    max-width: 60%;
+    margin: 2.5em auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    border: none;
+    border-radius: 5%;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), 4px 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: auto;
+    box-sizing: border-box;
+
+
+    .c-display{
+       text-align: center;
+       color: $font-color-result;
+       background: linear-gradient(to top, $gradient-color1, $gradient-color2);
+       border-radius: 3%;
+       padding: 1em;
+        
+       h1{
+        font-size: 1.2rem;
+        font-weight: 300;
+       }
+
+    .score-circle{
+       
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        margin: 0 auto;
+        background: linear-gradient(to top, $circle-gradient-color1, $circle-gradient-color2);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        
+    
+        h2{
+            font-size: 5rem;
+            font-weight: 700;
+            margin: 0;
+         
+        }
+
+        p{
+            font-size: 1.2rem;
+            font-weight: 300;
+            color: lightgray;
+            margin: 0;
+            padding:0;
+        }
+       
+     
+    }
+    
+
+    h3{
+        font-size: 1.5rem;
+        font-weight: 500;
+        margin: 1em 0;
+    }
+          
+      p{
+        font-weight: 300;
+        margin: 0;
+        padding: 0 1.5em;
+      }
+
+    }
+
+    @import "./container2.scss";
+   
+}
+
+
+@media screen and (max-width: 760px) {
+
+    .container{
+        max-width: 100%;
+        box-shadow: none;
+        display: grid;
+        grid-template-columns: 1fr;
+        margin: 0 auto;
+        border-radius: 0 0 5% 5%;
+
+        .c-display{
+            border-radius: 0 0 5% 5%;
+        }
+    
+    }
+ 
+}
