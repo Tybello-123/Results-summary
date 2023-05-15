@@ -4,17 +4,27 @@ body {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   font-family: "Hanken Grotesk", sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
 }
 
 .container {
   max-width: 60%;
-  margin: 3em auto;
+  margin: 4em auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
   border: none;
-  border-radius: 5%;
-  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), 4px 4px 8px rgba(0, 0, 0, 0.1);
-          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25), 4px 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 1em;
+  -webkit-box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
+          box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1), 4px 4px 8px rgba(0, 0, 0, 0.1);
   overflow: auto;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -24,7 +34,7 @@ body {
   color: hsl(0, 0%, 100%);
   background: -webkit-gradient(linear, left bottom, left top, from(hsl(241, 81%, 54%)), to(hsl(252, 100%, 67%)));
   background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
-  border-radius: 3%;
+  border-radius: 1em;
   padding: 1em;
 }
 .container .c-display h1 {
@@ -90,10 +100,10 @@ body {
 }
 .container .c-summary .s-container {
   padding: 1.5em;
-  border-radius: 5%;
+  border-radius: 1em;
 }
 .container .c-summary .s-container h4 {
-  margin-bottom: 1em;
+  margin: 0.1em 0 1em 0;
   font-size: 1.2rem;
   font-weight: 700;
 }
@@ -152,6 +162,10 @@ body {
   background: linear-gradient(to top, hsl(241, 81%, 54%), hsl(252, 100%, 67%));
 }
 
+.attribution {
+  text-align: center;
+}
+
 @media screen and (max-width: 760px) {
   .container {
     max-width: 100%;
@@ -160,9 +174,9 @@ body {
     display: grid;
     grid-template-columns: 1fr;
     margin: 0 auto;
-    border-radius: 0 0 5% 5%;
+    border-radius: 0 0 1em 1em;
   }
   .container .c-display {
-    border-radius: 0 0 5% 5%;
+    border-radius: 0 0 1em 1em;
   }
 }

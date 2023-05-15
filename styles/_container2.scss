@@ -1,4 +1,5 @@
 
+
 .ti{
     display: flex;
     align-items: center;
@@ -12,15 +13,16 @@
 
 
 
+
 .c-summary{
    
   
   .s-container{
     padding: 1.5em;
-    border-radius: 5%;
+    border-radius: $outer-border-radius;
 
     h4{
-        margin-bottom: 1em;
+        margin: 0.1em 0 1em 0;
         font-size: 1.2rem;
         font-weight: 700;
     }
@@ -39,7 +41,7 @@
 }
 
 .reaction{
-    background-color:  $reaction-bg-color;;
+    background-color:  $reaction-bg-color;
     @extend .ti;
     color: $reaction-text-color;
    
